@@ -5,7 +5,7 @@ import { ProjectsLink } from "../components/ProjectsLink";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import { useIsSmall } from "../components/MediaQuery";
 
@@ -17,13 +17,14 @@ export function Home() {
   const [video, setVideo] = useState(false);
   const [border, setBorder] = useState(false);
 
+  const bio = useRef(null);
+  const doubleDragon = useRef(null);
+  const spanDragon = useRef(null);
+
   const disableSpin = () => {
-    const bio = document.querySelector("#bio");
-    const doubledragon = document.querySelector("#doubledragon");
-    const spandragon = document.querySelector("#spandragon");
-    doubledragon.classList.toggle("animate-spin");
-    spandragon.classList.toggle("hidden");
-    bio.classList.toggle("hidden");
+    doubleDragon.current.classList.toggle("animate-spin");
+    spanDragon.current.classList.toggle("hidden");
+    bio.current.classList.toggle("hidden");
   };
 
   /* animate to move dragons-spin */
@@ -73,7 +74,7 @@ export function Home() {
         <section>
           <div className="w-full">
             <ProjectsLink />
-            <label className="hidden" id="bio">
+            <label className="hidden" ref={bio}>
               <motion.div
                 variants={borderAnimate}
                 transition={{
@@ -136,13 +137,13 @@ export function Home() {
                   disableSpin();
                 }}
                 className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full animate-spin"
-                id="doubledragon"
+                ref={doubleDragon}
                 alt="Dois dragões"
               />
 
               <p
                 className="text-center text-xs sm:text-sm font-Noto-Sans text-slate-200"
-                id="spandragon"
+                ref={spanDragon}
               >
                 click here
               </p>
