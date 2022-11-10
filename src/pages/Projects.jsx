@@ -33,7 +33,6 @@ export function Projects() {
       <Overlay />
       <Menu />
       <Card />
-      <Socials />
     </motion.div>
   );
 }
