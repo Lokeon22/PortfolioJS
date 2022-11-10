@@ -1,5 +1,6 @@
 import pombal from "../assets/pombalProject.png";
 import poke from "../assets/pokemonProject.png";
+import witcher from "../assets/witcherProject.png";
 import github from "../assets/github.svg";
 
 const projetos = [
@@ -35,13 +36,13 @@ const projetos = [
   },
   {
     id: 3,
-    imgURL: pombal,
-    title: "P.O.K-API",
+    imgURL: witcher,
+    title: "The Witcher",
     description:
-      "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes",
-    stack: ["#React", "#Tailwind", "#PokeAPI"],
+      "Projeto realizado para aplicar os conceitos do DOM. Contém o uso de duas libs, SwiperJS e Vanila-tilt.js",
+    stack: ["#HTML", "#CSS", "#JS"],
     github: github,
-    link: "https://github.com/Lokeon22/P.O.K-API",
+    link: "https://github.com/Lokeon22/Witcher-project",
   },
   {
     id: 4,
