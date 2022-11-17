@@ -1,6 +1,7 @@
 import pombal from "../assets/pombalProject.png";
 import poke from "../assets/pokemonProject.png";
 import witcher from "../assets/witcherProject.png";
+import topfilmes from "../assets/topfilmesProject.png";
 import github from "../assets/github.svg";
 
 const projetos = [
@@ -26,11 +27,11 @@ const projetos = [
   },
   {
     id: 2,
-    imgURL: poke,
-    title: "P.O.K-API",
+    imgURL: topfilmes,
+    title: "Top Filmes",
     description:
-      "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes",
-    stack: ["#React", "#Tailwind", "#PokeAPI"],
+      "Projeto para consumir uma API do TMDB. O usuário consegue verificar os detalhes de cada filme e também foi implementado um filtro de buscas.",
+    stack: ["#React", "#Tailwind", "#TMDB_API"],
     github: github,
     link: "https://github.com/Lokeon22/P.O.K-API",
   },
