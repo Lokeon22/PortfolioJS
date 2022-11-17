@@ -19,8 +19,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "bg-flower": "url('./src/assets/bg-flower.jpg')",
-        "yin-yang": "url('./src/assets/double-dragon.svg')",
+        "bg-flower": "url('./src/assets/projectsPreview/bg-flower.jpg')",
+        "yin-yang": "url('./src/assets/icons/double-dragon.svg')",
       },
       fontFamily: {
         "Noto-Sans": ["'Noto Sans JP', sans-serif;"],

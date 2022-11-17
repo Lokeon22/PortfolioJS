@@ -1,15 +1,15 @@
-import { Menu } from "../components/Menu";
-import { Socials } from "../components/Socials";
-import { ContactEmail } from "../components/ContactEmail";
-import { ProjectsLink } from "../components/ProjectsLink";
-import { Particle } from "../components/Particles";
+import { Menu } from "../../components/Menu";
+import { Socials } from "../../components/Socials";
+import { ContactEmail } from "../../components/ContactEmail";
+import { ProjectsLink } from "../../components/ProjectsLink";
+import { Particle } from "../../components/Particles";
 
 import { BsArrowLeft } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import onlyDesktop from "../assets/japanDesktop.mp4";
+import onlyDesktop from "../../assets/shortVideos/japanDesktop.mp4";
 
 export function Contact() {
   const transPageProjects = {

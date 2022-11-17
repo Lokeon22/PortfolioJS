@@ -29,11 +29,17 @@ export function Card() {
                 <a
                   href={projeto.link}
                   target="_blank"
-                  className="ml-10 max-[331px]:ml-0"
+                  className="ml-6 md:ml-10 max-[331px]:ml-0"
                 >
                   <img
                     src={projeto.github}
-                    className="md:w-[25px] md:h-[25px] w-[22px] h-[22px] bg-slate-200 rounded-full opacity-95"
+                    className="md:w-[25px] md:h-[25px] w-[22px] h-[22px] bg-slate-200 rounded-full opacity-95 hover:bg-slate-300"
+                  />
+                </a>
+                <a href={projeto.linkrepo} target="_blank">
+                  <img
+                    src={projeto.live}
+                    className="md:w-[25px] md:h-[25px] w-[22px] h-[22px] bg-slate-200 rounded-full opacity-95 hover:bg-slate-300"
                   />
                 </a>
               </ul>

@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-import music from "../assets/Eternal.mp3";
+import music from "../assets/audio/Eternal.mp3";
 
 export const AudioPlayer = () => {
   const [play, setPlay] = useState(false);

@@ -1,16 +1,15 @@
-import { Menu } from "../components/Menu";
-import { Socials } from "../components/Socials";
-import { Overlay } from "../components/Overlay";
-import { ProjectsLink } from "../components/ProjectsLink";
+import { Menu } from "../../components/Menu";
+import { Socials } from "../../components/Socials";
+import { Overlay } from "../../components/Overlay";
+import { ProjectsLink } from "../../components/ProjectsLink";
 
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
 
-import { useIsSmall } from "../components/MediaQuery";
+import { useIsSmall } from "../../components/MediaQuery";
 
-import Yin from "../assets/double-dragon.svg";
-import sword from "../assets/sword.mp4";
+import Yin from "../../assets/icons/double-dragon.svg";
+import sword from "../../assets/shortVideos/sword.mp4";
 
 export function Home() {
   const [move, setMove] = useState(false);

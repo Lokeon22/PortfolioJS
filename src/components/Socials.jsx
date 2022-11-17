@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
-import whatsapp from "../assets/whatsapp.svg";
+import github from "../assets/icons/github.svg";
+import linkedin from "../assets/icons/linkedin.svg";
+import whatsapp from "../assets/icons/whatsapp.svg";
 
 export function Socials() {
   return (

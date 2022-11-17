@@ -1,10 +1,8 @@
-import { Menu } from "../components/Menu";
-import { Socials } from "../components/Socials";
-import { Overlay } from "../components/Overlay";
-import { Card } from "../components/Card";
+import { Menu } from "../../components/Menu";
+import { Overlay } from "../../components/Overlay";
+import { Card } from "../../components/Card";
 
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export function Projects() {
   const transPageProjects = {
@@ -28,7 +26,7 @@ export function Projects() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="absolute w-full h-full bg-bg-flower bg-cover lg:bg-center bg-no-repeat z-50"
+      className="absolute w-full h-full bg-bg-flower bg-cover lg:bg-center bg-no-repeat z-40"
     >
       <Overlay />
       <Menu />
