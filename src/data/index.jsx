@@ -59,7 +59,7 @@ const projetos = [
     imgURL: pombal,
     title: "P.O.K-API",
     description:
-      "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes",
+      "Projeto para armazenar alguns exercícios com JavaScript como TodoList, GitFav, Relógio Pomodoro etc...",
     stack: ["#React", "#Tailwind", "#PokeAPI"],
     github: github,
     live: live,
