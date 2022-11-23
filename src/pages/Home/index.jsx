@@ -144,7 +144,7 @@ export function Home() {
                 className="text-center text-xs sm:text-sm font-Noto-Sans text-slate-200"
                 ref={spanDragon}
               >
-                click here
+                clique aqui!
               </p>
             </div>
           </div>
