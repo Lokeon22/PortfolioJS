@@ -2,6 +2,7 @@ import pombal from "../assets/projectsPreview/pombalProject.png";
 import poke from "../assets/projectsPreview/pokemonProject.png";
 import witcher from "../assets/projectsPreview/witcherProject.png";
 import topfilmes from "../assets/projectsPreview/topfilmesProject.png";
+import folderProject from "../assets/projectsPreview/folderProject.png";
 import github from "../assets/icons/github.svg";
 import live from "../assets/icons/live.svg";
 
@@ -12,7 +13,7 @@ const projetos = [
     title: "Pombal Movies",
     description:
       "Aplicativo full stack criado para o usuário postar reviews e notas sobre qualquer tipo de filme. No back-end, foi utilizado o Axios para consumir uma API própria. ",
-    stack: ["#React", "#Styled-Components", "#Node"],
+    stack: ["React", "Styled-Components", "Node"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/Pombal-Movies",
@@ -24,7 +25,7 @@ const projetos = [
     title: "P.O.K-API",
     description:
       "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes.",
-    stack: ["#React", "#Tailwind", "#PokeAPI"],
+    stack: ["React", "Tailwind", "PokeAPI"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/P.O.K-API",
@@ -36,7 +37,7 @@ const projetos = [
     title: "Top Filmes",
     description:
       "Projeto para consumir uma API do TMDB. O usuário consegue verificar os detalhes de cada filme e também foi implementado um filtro de buscas.",
-    stack: ["#React", "#Tailwind", "#TMDB_API"],
+    stack: ["React", "Tailwind", "TMDB_API"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/Project-Films",
@@ -48,7 +49,7 @@ const projetos = [
     title: "The Witcher",
     description:
       "Projeto realizado para aplicar os conceitos do DOM. Contém o uso de duas libs, SwiperJS e Vanila-tilt.js",
-    stack: ["#HTML", "#CSS", "#JS"],
+    stack: ["HTML", "CSS", "JS"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/Witcher-project",
@@ -56,27 +57,26 @@ const projetos = [
   },
   {
     id: 4,
-    imgURL: pombal,
-    title: "P.O.K-API",
+    imgURL: folderProject,
+    title: "Pasta de Projetos",
     description:
-      "Projeto para armazenar alguns exercícios com JavaScript como TodoList, GitFav, Relógio Pomodoro etc...",
-    stack: ["#React", "#Tailwind", "#PokeAPI"],
+      "Repositório para armazenar alguns exercícios como TodoList, Git-Favoritos, Relógio Pomodoro, entre outros.",
+    stack: ["HTML", "CSS", "JS"],
     github: github,
     live: live,
-    link: "https://github.com/Lokeon22/P.O.K-API",
-    linkrepo: "https://pombalmovies.netlify.app/",
+    link: "https://github.com/Lokeon22/Exec",
+    linkrepo: "https://github.com/Lokeon22/Exec",
   },
   {
     id: 5,
-    imgURL: poke,
-    title: "P.O.K-API",
+    title: "Em breve",
     description:
-      "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes",
-    stack: ["#React", "#Tailwind", "#PokeAPI"],
+      "Projeto em fase de desenvolvimento, posteriormente ao ser finalizado será adicionado.",
+    stack: ["?", "?", "?"],
     github: github,
     live: live,
-    link: "https://github.com/Lokeon22/P.O.K-API",
-    linkrepo: "https://pombalmovies.netlify.app/",
+    link: "https://github.com/Lokeon22/Portfolio",
+    linkrepo: "https://github.com/Lokeon22/Portfolio",
   },
 ];
 
