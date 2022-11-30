@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 
+import flower from "../../assets/projectsPreview/bg-flower.jpg";
+
 export function Projects() {
   const transPageProjects = {
     initial: {
@@ -28,7 +30,8 @@ export function Projects() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="absolute w-full h-full bg-bg-flower bg-cover lg:bg-center bg-no-repeat z-40"
+      className="absolute w-full h-full bg-cover lg:bg-center bg-no-repeat z-40"
+      style={{ backgroundImage: `url(${flower})` }}
     >
       <Overlay />
       <Menu />

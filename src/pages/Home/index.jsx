@@ -10,6 +10,7 @@ import { useIsSmall } from "../../components/MediaQuery";
 
 import Yin from "../../assets/icons/double-dragon.svg";
 import sword from "../../assets/shortVideos/sword.mp4";
+import flower from "../../assets/projectsPreview/bg-flower.jpg";
 
 export function Home() {
   const [move, setMove] = useState(false);
@@ -66,7 +67,10 @@ export function Home() {
 
   return (
     <motion.div>
-      <div className="absolute w-full h-full bg-bg-flower bg-cover lg:bg-center bg-no-repeat z-40">
+      <div
+        className="absolute w-full h-full bg-cover lg:bg-center bg-no-repeat z-40"
+        style={{ backgroundImage: `url(${flower})` }}
+      >
         <Overlay />
         <Menu />
 
