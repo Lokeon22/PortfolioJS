@@ -149,7 +149,6 @@ export function Home() {
             </div>
           </div>
         </section>
-
         <Socials />
       </div>
     </motion.div>
