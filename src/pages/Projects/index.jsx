@@ -37,7 +37,7 @@ export function Projects() {
       <Menu />
       <div className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Card />
-        <section className="max-w-[1200px] text-white mx-auto my-0 px-2 mb-1">
+        <section className="max-w-[1200px] text-white mx-auto my-0 px-2 mb-1 max-[331px]:hidden">
           <div className="flex flex-row flex-wrap gap-1 items-center">
             <p className="text-slate-500 text-xs">
               {"{ "}Esse portifólio foi criado com

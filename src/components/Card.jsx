@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Card() {
   return (
-    <motion.div className="max-w-[1200px] md:h-[700px] lg:h-[630px] h-[550px] max-[331px]:h-[400px] mx-auto my-10 2xl:mt-10 2xl:mb-10 overflow-x-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#660000] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    <motion.div className="max-[331px]:mt-30 max-[331px]:mb-0 max-w-[1200px] md:h-[700px] lg:h-[630px] h-[550px] max-[331px]:h-[400px] mx-auto my-10 2xl:mt-10 2xl:mb-10 overflow-x-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#660000] scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <motion.div className="grid md:grid-cols-2 px-2 md:px-0">
         {projetos.map((projeto) => (
           <motion.div
