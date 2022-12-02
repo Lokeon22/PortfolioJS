@@ -1,5 +1,10 @@
-# My Portfolio Website
+# Meu Portifólio
 
-### Preview Content
+### Um lugar onde você pode visualizar os meus projetos e entrar em contato.
 
-## Working... 85% completed
+### Acesse o portifólio clicando [aqui](https://gabriellportifolio.netlify.app)
+
+## Stack utilizada
+
+- [React](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
