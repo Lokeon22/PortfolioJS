@@ -35,9 +35,9 @@ export function Projects() {
     >
       <Overlay />
       <Menu />
-      <div className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="flex flex-col items-center justify-center w-full h-[85%]">
         <Card />
-        <section className="max-w-[1200px] text-white mx-auto my-0 px-2 mb-1 max-[331px]:hidden">
+        <section className="flex flex-col sm:flex-row gap-1 sm:gap-2 mt-4 sm:self-auto self-start sm:px-0 px-2">
           <div className="flex flex-row flex-wrap gap-1 items-center">
             <p className="text-slate-500 text-xs">
               {"{ "}Esse portifólio foi criado com

@@ -3,6 +3,7 @@ import poke from "../assets/projectsPreview/pokemonProject.png";
 import witcher from "../assets/projectsPreview/witcherProject.png";
 import topfilmes from "../assets/projectsPreview/topfilmesProject.png";
 import folderProject from "../assets/projectsPreview/folderProject.png";
+import explorerfood from "../assets/projectsPreview/explorerfoodProject.png";
 import github from "../assets/icons/github.svg";
 import live from "../assets/icons/live.svg";
 
@@ -12,7 +13,7 @@ const projetos = [
     imgURL: pombal,
     title: "Pombal Movies",
     description:
-      "Aplicativo full stack criado para o usuário postar reviews e notas sobre qualquer tipo de filme. No back-end, foi utilizado o Axios para consumir uma API própria. ",
+      "Aplicativo full stack criado para o usuário postar reviews sobre qualquer filme. No back-end, foi utilizado o Axios para consumir uma API própria. ",
     stack: ["React", "Styled-Components", "Node"],
     github: github,
     live: live,
@@ -21,6 +22,18 @@ const projetos = [
   },
   {
     id: 1,
+    imgURL: explorerfood,
+    title: "Explorer Food",
+    description:
+      "Site para o cliente poder visualizar todos os pratos disponíveis no restaurante. Principais funcionalidades: Carrinho de compras, Api-ViaCep e cálculo de frete.",
+    stack: ["React", "Tailwind"],
+    github: github,
+    live: live,
+    link: "https://github.com/Lokeon22/Foods",
+    linkrepo: " https://explorerfoods.netlify.app/",
+  },
+  {
+    id: 2,
     imgURL: poke,
     title: "P.O.K-API",
     description:
@@ -32,11 +45,11 @@ const projetos = [
     linkrepo: "https://github.com/Lokeon22/P.O.K-API",
   },
   {
-    id: 2,
+    id: 3,
     imgURL: topfilmes,
     title: "Top Filmes",
     description:
-      "Projeto para consumir uma API do TMDB. O usuário consegue verificar os detalhes de cada filme e também foi implementado um filtro de buscas.",
+      "Projeto para consumir uma API do TMDB. O usuário consegue verificar os detalhes do filme e também foi implementado um filtro de buscas.",
     stack: ["React", "Tailwind", "TMDB_API"],
     github: github,
     live: live,
@@ -44,7 +57,7 @@ const projetos = [
     linkrepo: "https://projectfilms.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     imgURL: witcher,
     title: "The Witcher",
     description:
@@ -56,7 +69,7 @@ const projetos = [
     linkrepo: "https://lokeon22.github.io/Witcher-project/",
   },
   {
-    id: 4,
+    id: 5,
     imgURL: folderProject,
     title: "Pasta de Projetos",
     description:
@@ -68,7 +81,7 @@ const projetos = [
     linkrepo: "https://github.com/Lokeon22/Exec",
   },
   {
-    id: 5,
+    id: 6,
     title: "Em breve",
     description:
       "Projeto em fase de desenvolvimento, posteriormente ao ser finalizado será adicionado.",
