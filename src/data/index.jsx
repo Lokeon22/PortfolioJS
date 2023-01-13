@@ -1,51 +1,61 @@
-import pombal from "../assets/projectsPreview/pombalProject.png";
-import poke from "../assets/projectsPreview/pokemonProject.png";
-import witcher from "../assets/projectsPreview/witcherProject.png";
-import topfilmes from "../assets/projectsPreview/topfilmesProject.png";
-import folderProject from "../assets/projectsPreview/folderProject.png";
-import explorerfood from "../assets/projectsPreview/explorerfoodProject.png";
-import github from "../assets/icons/github.svg";
-import live from "../assets/icons/live.svg";
+import {
+  pombal,
+  poke,
+  witcher,
+  topfilmes,
+  folderProject,
+  explorerfood,
+  github,
+  live,
+  food1,
+  food2,
+  food3,
+  food4,
+  food5,
+} from "./dataImports";
 
 const projetos = [
   {
-    id: 0,
+    id: 1,
     imgURL: pombal,
     title: "Pombal Movies",
     description:
-      "Aplicativo full stack criado para o usuário postar reviews sobre qualquer filme. No back-end, foi utilizado o Axios para consumir uma API própria. ",
+      "Aplicativo full stack onde o usuário pode criar seu perfil e adicionar reviews sobre qualquer filme. No back-end, foi utilizado o Axios para consumir uma API própria.",
     stack: ["React", "Styled-Components", "Node"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/Pombal-Movies",
     linkrepo: "https://pombalmovies.netlify.app/",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 1,
+    id: 2,
     imgURL: explorerfood,
     title: "Explorer Food",
     description:
-      "Site para o cliente poder visualizar todos os pratos disponíveis no restaurante. Principais funcionalidades: Carrinho de compras, Api-ViaCep e cálculo de frete.",
+      "Site para o cliente visualizar todos os pratos disponíveis no restaurante. Principais funcionalidades: Carrinho de compras, filtro de busca, pratos favoritos, Api-ViaCep e cálculo de frete.",
     stack: ["React", "Tailwind"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/Foods",
     linkrepo: " https://explorerfoods.netlify.app/",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 2,
+    id: 3,
     imgURL: poke,
     title: "P.O.K-API",
     description:
-      "Desenvolvido para consumir dados da API do Pokemon, onde o usuário efetua buscas por um pokemon específico e verificar os detalhes.",
+      "Desenvolvido para consumir dados da API do Pokemon, o usuário pode efetuar buscas por um pokemon específico, adicioná-lo como favorito e verificar seus detalhes.",
     stack: ["React", "Tailwind", "PokeAPI"],
     github: github,
     live: live,
     link: "https://github.com/Lokeon22/P.O.K-API",
     linkrepo: "https://github.com/Lokeon22/P.O.K-API",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 3,
+    id: 4,
     imgURL: topfilmes,
     title: "Top Filmes",
     description:
@@ -55,9 +65,10 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Project-Films",
     linkrepo: "https://projectfilms.netlify.app/",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 4,
+    id: 5,
     imgURL: witcher,
     title: "The Witcher",
     description:
@@ -67,9 +78,10 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Witcher-project",
     linkrepo: "https://lokeon22.github.io/Witcher-project/",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 5,
+    id: 6,
     imgURL: folderProject,
     title: "Pasta de Projetos",
     description:
@@ -79,9 +91,10 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Exec",
     linkrepo: "https://github.com/Lokeon22/Exec",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
   {
-    id: 6,
+    id: 7,
     title: "Em breve",
     description:
       "Projeto em fase de desenvolvimento, posteriormente ao ser finalizado será adicionado.",
@@ -90,6 +103,7 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Portfolio",
     linkrepo: "https://github.com/Lokeon22/Portfolio",
+    fotosProjetos: [food1, food2, food3, food4, food5],
   },
 ];
 

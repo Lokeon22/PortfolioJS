@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import projetos from "../data";
 import { motion } from "framer-motion";
 
@@ -10,12 +11,14 @@ export function Card() {
             key={projeto.id}
             className="text-slate-200 bg-gray-900 rounded-2xl bg-opacity-10 px-2 py-2 md:px-4 md:py-4 w-full h-full"
           >
-            <motion.img
-              src={projeto.imgURL}
-              className="rounded-xl mb-1 w-full xl:h-[220px] h-auto hover:scale-105 duration-200"
-            />
+            <Link to={`/project/${projeto.id}`}>
+              <motion.img
+                src={projeto.imgURL}
+                className="rounded-xl mb-1 w-full xl:h-[220px] h-auto hover:scale-105 duration-200 cursor-pointer"
+              />
+            </Link>
             <h2 className="text-lg md:text-xl">{projeto.title}</h2>
-            <p className="text-slate-300 mt-1 mb-2 sm:text-sm text-xs">
+            <p className="text-slate-300 mt-1 mb-2 sm:text-sm text-xs whitespace-nowrap overflow-hidden text-ellipsis">
               {projeto.description}
             </p>
             <label className="mt-2 text-sm sm:text-base">

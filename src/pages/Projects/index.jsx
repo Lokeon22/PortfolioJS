@@ -11,10 +11,10 @@ import flower from "../../assets/projectsPreview/bg-flower.jpg";
 export function Projects() {
   const transPageProjects = {
     initial: {
-      scaleY: 0.5,
+      opacity: 0.3,
     },
     animate: {
-      scaleY: 1,
+      opacity: 1,
     },
     exit: {
       x: "-100%",
