@@ -1,7 +1,6 @@
 import {
   pombal,
   poke,
-  witcher,
   topfilmes,
   folderProject,
   explorerfood,
@@ -12,6 +11,16 @@ import {
   food3,
   food4,
   food5,
+  topfilms1,
+  topfilms2,
+  topfilms3,
+  poke1,
+  poke2,
+  poke3,
+  poke4,
+  pomodoroTimer,
+  gitfavorites,
+  todoList,
 } from "./dataImports";
 
 const projetos = [
@@ -43,16 +52,16 @@ const projetos = [
   },
   {
     id: 3,
-    imgURL: poke,
+    imgURL: poke1,
     title: "P.O.K-API",
     description:
       "Desenvolvido para consumir dados da API do Pokemon, o usuário pode efetuar buscas por um pokemon específico, adicioná-lo como favorito e verificar seus detalhes.",
-    stack: ["React", "Tailwind", "PokeAPI"],
+    stack: ["Typescript", "React", "Tailwind"],
     github: github,
     live: live,
-    link: "https://github.com/Lokeon22/P.O.K-API",
-    linkrepo: "https://github.com/Lokeon22/P.O.K-API",
-    fotosProjetos: [food1, food2, food3, food4, food5],
+    link: "https://github.com/Lokeon22/Poke",
+    linkrepo: "https://github.com/Lokeon22/Poke",
+    fotosProjetos: [poke1, poke2, poke3, poke4],
   },
   {
     id: 4,
@@ -65,23 +74,10 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Project-Films",
     linkrepo: "https://projectfilms.netlify.app/",
-    fotosProjetos: [food1, food2, food3, food4, food5],
+    fotosProjetos: [topfilms1, topfilms2, topfilms3],
   },
   {
     id: 5,
-    imgURL: witcher,
-    title: "The Witcher",
-    description:
-      "Projeto realizado para aplicar os conceitos do DOM. Contém o uso de duas libs, SwiperJS e Vanila-tilt.js",
-    stack: ["HTML", "CSS", "JS"],
-    github: github,
-    live: live,
-    link: "https://github.com/Lokeon22/Witcher-project",
-    linkrepo: "https://lokeon22.github.io/Witcher-project/",
-    fotosProjetos: [food1, food2, food3, food4, food5],
-  },
-  {
-    id: 6,
     imgURL: folderProject,
     title: "Pasta de Projetos",
     description:
@@ -91,10 +87,10 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Exec",
     linkrepo: "https://github.com/Lokeon22/Exec",
-    fotosProjetos: [food1, food2, food3, food4, food5],
+    fotosProjetos: [pomodoroTimer, gitfavorites, todoList],
   },
   {
-    id: 7,
+    id: 6,
     title: "Em breve",
     description:
       "Projeto em fase de desenvolvimento, posteriormente ao ser finalizado será adicionado.",
@@ -103,7 +99,7 @@ const projetos = [
     live: live,
     link: "https://github.com/Lokeon22/Portfolio",
     linkrepo: "https://github.com/Lokeon22/Portfolio",
-    fotosProjetos: [food1, food2, food3, food4, food5],
+    fotosProjetos: [food1],
   },
 ];
 

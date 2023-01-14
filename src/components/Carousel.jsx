@@ -14,7 +14,10 @@ export const Carousel = ({ children }) => {
 
   return (
     <section className="flex justify-center items-center mx-auto my-0 max-w-[900px] gap-2 px-4">
-      <button className="hidden md:block" onClick={previusSlide}>
+      <button
+        className="hidden md:block hover:opacity-50 hover:text-red-500 hover:transition-all hover:ease-in"
+        onClick={previusSlide}
+      >
         <ArrowLeft size={32} />
       </button>
       <div
@@ -23,7 +26,10 @@ export const Carousel = ({ children }) => {
       >
         {children}
       </div>
-      <button className="hidden md:block" onClick={nextSlide}>
+      <button
+        className="hidden md:block hover:opacity-50 hover:text-red-500 hover:transition-all hover:ease-in"
+        onClick={nextSlide}
+      >
         <ArrowLeft size={32} className="rotate-180" />
       </button>
     </section>
