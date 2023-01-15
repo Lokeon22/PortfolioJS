@@ -6,6 +6,15 @@ import explorerfood from "../assets/projectsPreview/explorerfoodProject.png";
 import github from "../assets/icons/github.svg";
 import live from "../assets/icons/live.svg";
 
+import pombalgif from "../assets/projectsPreview/pombalProject/pombalgif.gif";
+import pombal1 from "../assets/projectsPreview/pombalProject/pombal1.png";
+import pombal2 from "../assets/projectsPreview/pombalProject/pombal2.png";
+import pombal3 from "../assets/projectsPreview/pombalProject/pombal3.png";
+import pombal4 from "../assets/projectsPreview/pombalProject/pombal4.png";
+import pombal5 from "../assets/projectsPreview/pombalProject/pombal5.png";
+import pombal6 from "../assets/projectsPreview/pombalProject/pombal6.png";
+
+import foodsgif from "../assets/projectsPreview/foodProject/foodsgif.gif";
 import food1 from "../assets/projectsPreview/foodProject/food1.png";
 import food2 from "../assets/projectsPreview/foodProject/food2.png";
 import food3 from "../assets/projectsPreview/foodProject/food3.png";
@@ -33,6 +42,14 @@ export {
   explorerfood,
   github,
   live,
+  pombalgif,
+  pombal1,
+  pombal2,
+  pombal3,
+  pombal4,
+  pombal5,
+  pombal6,
+  foodsgif,
   food1,
   food2,
   food3,
