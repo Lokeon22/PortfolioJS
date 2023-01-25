@@ -24,7 +24,10 @@ export const AudioPlayer = () => {
       className="absolute top-[2%] left-[20%] lg:left-[10%]"
       onClick={playMusic}
     >
-      <label className="fixed text-white flex items-center sm:text-4xl text-2xl cursor-pointer z-50">
+      <label
+        className="fixed text-white flex items-center sm:text-4xl text-2xl cursor-pointer z-50"
+        ref={iconSong}
+      >
         <span className="animate-beat1">.</span>
         <span className="animate-beat2">.</span>
         <span className="animate-beat1">.</span>
