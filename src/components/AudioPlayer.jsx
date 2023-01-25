@@ -22,8 +22,8 @@ export const AudioPlayer = () => {
       onClick={playMusic}
     >
       <label
-        className="fixed text-white flex items-center sm:text-4xl text-2xl cursor-pointer z-50"
-        style={{ animation: play ? "spin 6s linear infinite" : "null" }}
+        className="fixed text-white flex items-center sm:text-4xl text-2xl cursor-pointer z-50 animate-spin"
+        style={{ animation: play ? "" : "null" }}
       >
         <span className="animate-beat1">.</span>
         <span className="animate-beat2">.</span>

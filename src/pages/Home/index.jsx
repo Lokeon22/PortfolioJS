@@ -125,10 +125,8 @@ export function Home() {
                   setMove(!move);
                   setManagerDom(!managerDom);
                 }}
-                className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full"
-                style={{
-                  animation: managerDom ? "null" : "spin 6s linear infinite",
-                }}
+                className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full animate-spin"
+                style={{ animation: managerDom ? "null" : "" }}
                 alt="Dois dragões"
               />
 
