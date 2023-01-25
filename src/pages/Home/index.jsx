@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import { Menu } from "../../components/Menu";
 import { Socials } from "../../components/Socials";
@@ -14,6 +14,7 @@ import flower from "../../assets/projectsPreview/bg-flower.jpg";
 export function Home() {
   const [move, setMove] = useState(false);
   const [managerDom, setManagerDom] = useState(false);
+  const doubleDragon = useRef(null);
 
   /* animate to move dragons-spin */
   const isSmall = useIsSmall();
@@ -124,9 +125,10 @@ export function Home() {
                 onClick={() => {
                   setMove(!move);
                   setManagerDom(!managerDom);
+                  doubleDragon.current.classList.toggle("animate-spin");
                 }}
                 className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full animate-spin"
-                style={{ animation: managerDom ? "null" : "" }}
+                ref={doubleDragon}
                 alt="Dois dragões"
               />
 
