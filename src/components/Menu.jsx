@@ -9,7 +9,7 @@ export function Menu() {
           to="/"
           className="fixed text-2xl md:text-4xl font-Noto-Sans cursor-pointer"
         >
-          GF
+          GJ
         </Link>
       </div>
       <motion.div

@@ -1,11 +1,10 @@
+import { motion } from "framer-motion";
+import { useState } from "react";
+
 import { Menu } from "../../components/Menu";
 import { Socials } from "../../components/Socials";
 import { Overlay } from "../../components/Overlay";
 import { ProjectsLink } from "../../components/ProjectsLink";
-
-import { motion } from "framer-motion";
-import { useState, useRef } from "react";
-
 import { useIsSmall } from "../../components/MediaQuery";
 
 import Yin from "../../assets/icons/double-dragon.svg";
@@ -14,18 +13,7 @@ import flower from "../../assets/projectsPreview/bg-flower.jpg";
 
 export function Home() {
   const [move, setMove] = useState(false);
-  const [video, setVideo] = useState(false);
-  const [border, setBorder] = useState(false);
-
-  const bio = useRef(null);
-  const doubleDragon = useRef(null);
-  const spanDragon = useRef(null);
-
-  const disableSpin = () => {
-    doubleDragon.current.classList.toggle("animate-spin");
-    spanDragon.current.classList.toggle("hidden");
-    bio.current.classList.toggle("hidden");
-  };
+  const [managerDom, setManagerDom] = useState(false);
 
   /* animate to move dragons-spin */
   const isSmall = useIsSmall();
@@ -49,7 +37,7 @@ export function Home() {
       opacity: 0,
     },
     animate: {
-      opacity: video ? 0.8 : 0,
+      opacity: managerDom ? 0.8 : 0,
     },
   };
 
@@ -60,8 +48,8 @@ export function Home() {
       width: "1%",
     },
     animate: {
-      opacity: border ? 0.8 : 0,
-      width: border ? "71%" : 0,
+      opacity: managerDom ? 0.8 : 0,
+      width: managerDom ? "71%" : 0,
     },
   };
 
@@ -77,7 +65,7 @@ export function Home() {
         <section>
           <div className="w-full">
             <ProjectsLink />
-            <label className="hidden" ref={bio}>
+            <label style={{ display: managerDom ? "block" : "none" }}>
               <motion.div
                 variants={borderAnimate}
                 transition={{
@@ -135,18 +123,18 @@ export function Home() {
                 }}
                 onClick={() => {
                   setMove(!move);
-                  setVideo(!video);
-                  setBorder(!border);
-                  disableSpin();
+                  setManagerDom(!managerDom);
                 }}
-                className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full animate-spin"
-                ref={doubleDragon}
+                className="sm:w-52 w-36 mb-4 cursor-pointer bg-red-900 rounded-full"
+                style={{
+                  animation: managerDom ? "null" : "spin 6s linear infinite",
+                }}
                 alt="Dois dragões"
               />
 
               <p
                 className="text-center text-xs sm:text-sm font-Noto-Sans text-slate-200"
-                ref={spanDragon}
+                style={{ display: managerDom ? "none" : "block" }}
               >
                 clique aqui!
               </p>
