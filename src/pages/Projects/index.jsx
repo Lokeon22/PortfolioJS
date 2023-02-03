@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 
-import flower from "../../assets/projectsPreview/bg-flower.jpg";
+import flower from "../../assets/bg-flower.jpg";
 
 export function Projects() {
   const transPageProjects = {

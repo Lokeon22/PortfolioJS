@@ -9,7 +9,7 @@ import { useIsSmall } from "../../components/MediaQuery";
 
 import Yin from "../../assets/icons/double-dragon.svg";
 import sword from "../../assets/shortVideos/sword.mp4";
-import flower from "../../assets/projectsPreview/bg-flower.jpg";
+import flower from "../../assets/bg-flower.jpg";
 
 export function Home() {
   const [move, setMove] = useState(false);

@@ -2,7 +2,7 @@ import { Overlay } from "../../components/Overlay";
 
 import { Link } from "react-router-dom";
 
-import flower from "../../assets/projectsPreview/bg-flower.jpg";
+import flower from "../../assets/bg-flower.jpg";
 
 export function NotFound() {
   return (

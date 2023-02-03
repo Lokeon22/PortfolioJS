@@ -1,13 +1,21 @@
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-import projetos from "../../data";
+import { getAllProjects } from "../../services/apiCMS";
 import { Menu } from "../../components/Menu";
 import { CardDetail } from "../../components/CardDetail";
 
 export const ProjectDetail = () => {
+  const [projetos, setProjetos] = useState([]);
   const { id } = useParams();
+
+  useEffect(() => {
+    getAllProjects(setProjetos);
+  }, []);
+
   const projectFiltered = projetos.filter((project) => project.id == id);
 
   const arrowAnimate = {
@@ -29,9 +37,11 @@ export const ProjectDetail = () => {
           Voltar
         </p>
       </Link>
-      {projectFiltered.map((project) => (
-        <CardDetail key={project.id} data={project} />
-      ))}
+      {projectFiltered.length > 0
+        ? projectFiltered.map((project) => (
+            <CardDetail key={project.id} data={project} />
+          ))
+        : null}
       <motion.div
         className="md:hidden flex justify-center items-center mt-2"
         variants={arrowAnimate}
