@@ -1,4 +1,4 @@
-const token = `${import.meta.env.VITE_DATOCMS_ACCESS_TOKEN}`;
+const token = import.meta.env.VITE_API_TOKEN;
 
 export function getAllProjects(setProjetos) {
   return fetch("https://graphql.datocms.com/", {
