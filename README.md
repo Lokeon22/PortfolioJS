@@ -2,7 +2,7 @@
 
 ### Um lugar onde você pode visualizar os meus projetos e entrar em contato.
 
-### Acesse o portifólio clicando [aqui](https://gabriellportifolio.netlify.app)
+### Acesse o portifólio clicando [aqui](https://gabriellportfolio.netlify.app)
 
 ## Stack utilizada
 
