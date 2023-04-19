@@ -87,8 +87,8 @@ export function Home() {
                     </strong>
                   </h2>
                   <p className="2xl:text-center text-start md:mt-4 mt-2  text-sm smal-phone:text-base md:text-base">
-                    Atualmente estudando sobre desenvolvimento frontend
-                    utilizando tecnologias em volta do React.
+                    Sou um desenvolvedor web estudando frontend com React +
+                    TypeScript e backend com Node.
                   </p>
                   <p className="2xl:text-center text-start md:mt-0 mt-1 md:text-base text-sm">
                     Na parte acadêmica, estou cursando o último semestre de

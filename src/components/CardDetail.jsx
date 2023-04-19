@@ -23,9 +23,11 @@ export const CardDetail = ({ data }) => {
             />
           </a>
         </div>
-        <p className="max-w-[500px]">{data.cardDescription}</p>
+        <p className="max-w-[500px] sm:text-base text-sm text-gray-300">
+          {data.cardDescription}
+        </p>
         <footer className="flex flex-wrap items-center mt-4 mb-4">
-          <h2 className="font-Noto-Sans">Tech Stack:</h2>
+          <h2 className="font-Noto-Sans sm:text-base text-sm">Tech Stack:</h2>
           <span className="text-slate-300 sm:text-sm text-xs font-mono bg-slate-700 rounded-md px-2 py-[2px] sm:ml-2 ml-1">
             {data.stackPreview}
           </span>

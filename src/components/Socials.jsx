@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import github from "../assets/icons/github.svg";
 import linkedin from "../assets/icons/linkedin.svg";
-import whatsapp from "../assets/icons/whatsapp.svg";
+import file from "../assets/icons/file-download.svg";
 
 export function Socials() {
   return (
@@ -43,7 +43,7 @@ export function Socials() {
         <li>
           <a href="#" target="_blank">
             <motion.img
-              src={whatsapp}
+              src={file}
               className="md:w-8 md:h-8 w-7 h-7 invert opacity-90"
               initial={{ scale: 0, opacity: 0, y: 110 }}
               animate={{ scale: [1, 1.25, 1.5, 1], opacity: 1, y: 0 }}

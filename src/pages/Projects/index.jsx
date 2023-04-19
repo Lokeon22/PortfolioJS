@@ -30,12 +30,12 @@ export function Projects() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="absolute w-full h-full bg-cover lg:bg-center bg-no-repeat z-40"
+      className="absolute w-full h-[92vh] bg-cover lg:bg-center bg-no-repeat z-40"
       style={{ backgroundImage: `url(${flower})` }}
     >
       <Overlay />
       <Menu />
-      <div className="flex flex-col items-center justify-center w-full h-[85%]">
+      <div className="relative flex flex-col items-center justify-center w-full h-full">
         <Card />
         <section className="flex flex-col sm:flex-row gap-1 sm:gap-2 mt-4 sm:self-auto self-start sm:px-0 px-2">
           <div className="flex flex-row flex-wrap gap-1 items-center">

@@ -1,6 +1,6 @@
 const token = import.meta.env.VITE_API_TOKEN;
 
-export function getAllProjects(setProjetos) {
+export function getAllProjects(setProjetos, setLoading) {
   return fetch("https://graphql.datocms.com/", {
     method: "POST",
     headers: {
@@ -16,6 +16,7 @@ export function getAllProjects(setProjetos) {
     .then((res) => res.json())
     .then((res) => {
       setProjetos(res.data.allProjects);
+      setLoading(false);
     })
     .catch((error) => {
       console.log(error);
