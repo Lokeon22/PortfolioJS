@@ -107,6 +107,7 @@ export function Home() {
                   animate="animate"
                   src={sword}
                   autoPlay
+                  playsInline
                   loop
                   muted
                   className="opacity-80 sm:mx-0 mx-[50%] max-[331px]:hidden lg:border-l-4 lg:border-slate-200 border-l-0"

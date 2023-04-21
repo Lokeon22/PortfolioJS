@@ -7,6 +7,7 @@ module.exports = {
         spin: "spin 6s linear infinite",
         beat1: "beat1 3s ease-in-out infinite",
         beat2: "beat2 4s ease-in-out infinite",
+        changeOpDire: "changeOpDire 1s ease",
       },
       keyframes: {
         beat1: {
@@ -16,6 +17,10 @@ module.exports = {
         beat2: {
           "0, 100%": { transform: "scale(1)" },
           "50%": { transform: "translateY(-7px)" },
+        },
+        changeOpDire: {
+          "100%": { opacity: "1", transform: "translateX(0px)" },
+          "0%": { opacity: "0", transform: "translateX(-150px)" },
         },
       },
       backgroundImage: {
